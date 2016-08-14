@@ -129,6 +129,7 @@ else if($type == 'complete'){
 		$_POST['userpswd_new'] = null;
 	}
 	$m_user->setUserpswd($_POST['userpswd_new']);
+    $m_user->setLimitdate($_POST['limit']); // debug
 	$m_user->updateData($_SESSION['loginemail']);
 	$m_user->close();
 	if($m_user->getError() != ''){
