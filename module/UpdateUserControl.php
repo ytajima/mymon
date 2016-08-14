@@ -117,7 +117,6 @@ if($type == 'confirm'){
 	$_SESSION['userid'] = htmlspecialchars($_POST['userid']);
 	$_SESSION['userpswd_new'] = htmlspecialchars($_POST['userpswd_new']);
 	$_SESSION['email'] = htmlspecialchars($_POST['email']);
-    $_SESSION['limit'] = htmlspecialchars($_POST['limit']); // debug
 }
 else if($type == 'complete'){
 	// ユーザマスタのインスタンス生成
@@ -130,7 +129,6 @@ else if($type == 'complete'){
 		$_POST['userpswd_new'] = null;
 	}
 	$m_user->setUserpswd($_POST['userpswd_new']);
-    $m_user->setLimitdate($_POST['limit']); // debug
 	$m_user->updateData($_SESSION['loginemail']);
 	$m_user->close();
 	if($m_user->getError() != ''){
