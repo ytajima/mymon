@@ -117,6 +117,7 @@ if($type == 'confirm'){
 	$_SESSION['userid'] = htmlspecialchars($_POST['userid']);
 	$_SESSION['userpswd_new'] = htmlspecialchars($_POST['userpswd_new']);
 	$_SESSION['email'] = htmlspecialchars($_POST['email']);
+    $_SESSION['limit'] = htmlspecialchars($_POST['limit']);
 }
 else if($type == 'complete'){
 	// ユーザマスタのインスタンス生成
