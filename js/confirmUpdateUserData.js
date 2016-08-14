@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$("#toUpdateUserData").click(function(){
-		location.href = "/testApp/updateUserData.php";
+		location.href = "/updateUserData.php";
 		return false;
 	});
 });
@@ -16,11 +16,11 @@ function toComplete(){
 	})
 	.done(function( data ) {
 		if(data.status == 'fail'){
-			location.href = '/testApp/error.php';
+			location.href = '/error.php';
 		}
 		else{
 			// 登録完了画面へ遷移
-			location.href = '/testApp/completeUpdateUserData.php';
+			location.href = '/completeUpdateUserData.php';
 		}
 	});
 	return false;

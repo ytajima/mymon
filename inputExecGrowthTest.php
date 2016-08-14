@@ -3,7 +3,7 @@ session_start();
 
 if(!isset($_SESSION['loginid']) || empty($_SESSION['loginid'])){
 	header("HTTP/1.1 301 Moved Permanently");
-	header("Location: /testApp/index.php");
+	header("Location: /index.php");
 	exit;
 }
 ?>

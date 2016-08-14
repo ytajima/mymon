@@ -11,7 +11,7 @@ $(document).ready(function(){
 			$("#age").append(data.status);
 		}
 		else{
-			location.href = "/testApp/error.php";
+			location.href = "/error.php";
 		}
 	});
 	var data2 = { type : "gender"};
@@ -26,7 +26,7 @@ $(document).ready(function(){
 			$("#gender").append(data.status);
 		}
 		else{
-			location.href = "/testApp/error.php";
+			location.href = "/error.php";
 		}
 	});
 	$("#toInputAttributeControl").click(function(){
@@ -41,16 +41,16 @@ $(document).ready(function(){
 		})
 		.done(function( data ){
 			if(data.status != 'fail'){
-				location.href = "/testApp/inputExecTest.php";
+				location.href = "/inputExecTest.php";
 			}
 			else{
-				location.href = "/testApp/error.php";
+				location.href = "/error.php";
 			}
 		});
 		return false;
 	});
 	$("#toIndex").click(function(){
-		location.href = "/testApp/index.php";
+		location.href = "/index.php";
 		return false;
 	});
 });

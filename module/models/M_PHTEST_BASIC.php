@@ -1,6 +1,6 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT'].'/testApp/module/common/Util.php');
-require_once $_SERVER['DOCUMENT_ROOT'].'/testApp/sql/m_phtest_basic_define.php';
+require_once($_SERVER['DOCUMENT_ROOT'].'/module/common/Util.php');
+require_once $_SERVER['DOCUMENT_ROOT'].'/sql/m_phtest_basic_define.php';
 class M_PHTEST_BASIC {
 	private $pdo = null;
 	private $id = '';

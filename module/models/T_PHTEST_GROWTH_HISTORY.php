@@ -1,6 +1,6 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT'].'/testApp/module/common/Util.php');
-require_once $_SERVER['DOCUMENT_ROOT'].'/testApp/sql/t_phtest_growth_history_define.php';
+require_once($_SERVER['DOCUMENT_ROOT'].'/module/common/Util.php');
+require_once $_SERVER['DOCUMENT_ROOT'].'/sql/t_phtest_growth_history_define.php';
 class T_PHTEST_GROWTH_HISTORY {
 	private $pdo = null;
 	private $userid = '';

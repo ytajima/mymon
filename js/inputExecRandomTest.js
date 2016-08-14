@@ -11,7 +11,7 @@
 	})
 	.done(function( data ){
 		if(data.status == 'fail'){
-			location.href = '/testApp/error.php';
+			location.href = '/error.php';
 		}
 		else{
 			// 取得した質問内容を描画
@@ -30,16 +30,16 @@
 		})
 		.done(function( data ){
 			if(data.status == 'fail'){
-				location.href = '/testApp/error.php';
+				location.href = '/error.php';
 			}
 			else {
-				location.href = '/testApp/mypage.php';
+				location.href = '/mypage.php';
 			}
 		});
 		return false;
 	});
 	$("#toBack").click(function(){
-		location.href = "/testApp/inputExecGrowthTest.php";
+		location.href = "/inputExecGrowthTest.php";
 		return false;
 	});
 	$.fn.rotate_box = function(){

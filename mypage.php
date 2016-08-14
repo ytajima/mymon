@@ -3,7 +3,7 @@ session_start();
 
 if(!isset($_SESSION['loginid']) || empty($_SESSION['loginid'])){
 	header("HTTP/1.1 301 Moved Permanently");
-	header("Location: /testApp/index.php");
+	header("Location: /index.php");
 	exit;
 }
 ?>
@@ -69,9 +69,9 @@ if(!isset($_SESSION['loginid']) || empty($_SESSION['loginid'])){
 			<div id='mypage_banner'>
 				<table>
 					<tr>
-						<td id='banner'><a href='#'><img alt='' title='' src='/testApp/img/banner/banner_left.jpg'></a></td>
-						<td id='banner'><a href='#'><img alt='' title='' src='/testApp/img/banner/banner_center.jpg'></a></td>
-						<td id='banner'><a href='#'><img alt='' title='' src='/testApp/img/banner/banner_right.jpg'></a></td>
+						<td id='banner'><a href='#'><img alt='' title='' src='/img/banner/banner_left.jpg'></a></td>
+						<td id='banner'><a href='#'><img alt='' title='' src='/img/banner/banner_center.jpg'></a></td>
+						<td id='banner'><a href='#'><img alt='' title='' src='/img/banner/banner_right.jpg'></a></td>
 					</tr>
 				</table>
 			</div>

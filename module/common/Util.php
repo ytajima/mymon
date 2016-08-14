@@ -1,5 +1,5 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT'].'/testApp/module/log4php/Logger.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/module/log4php/Logger.php');
 /**
  * utilクラス
  * ロガーや入力チェック等を記載する
@@ -12,7 +12,7 @@ class Util {
 	 * @return Logger Logger
 	 */
 	public static function getLogger(){
-		$tmpPath = $_SERVER['DOCUMENT_ROOT'].'/testApp/config/appender_dailyfile.properties';
+		$tmpPath = $_SERVER['DOCUMENT_ROOT'].'/config/appender_dailyfile.properties';
 		Logger::configure($tmpPath);
 		$logger = Logger::getRootLogger();
 		return $logger;
@@ -130,7 +130,7 @@ class Util {
 	 * @param string $param
 	 * @return string
 	 */
-	public static function getDateTimeFormatFromString($param){
+	public static function getDateTimeFormatFromStrｖing($param){
 	 if(is_null($param) || trim($param==='')){
 		return '';
 	}

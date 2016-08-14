@@ -6,7 +6,7 @@ if(!isset($_SESSION['loginid']) || empty($_SESSION['loginid'])){
 }
 else{
 	header("HTTP/1.1 301 Moved Permanently");
-	header("Location: /testApp/mypage.php");
+	header("Location: /mypage.php");
 	exit;
 }
 
@@ -42,5 +42,11 @@ else{
 			<div id='footer'>
 			</div>
 		</div>
+<script type="text/javascript">
+var $zoho= $zoho || {salesiq:{values:{},ready:function(){}}};var d=document;s=d.createElement("script");s.type="text/javascript";
+s.defer=true;s.src="https://salesiq.zoho.com/jica/float.ls?embedname=chat";
+t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);
+$zoho.salesiq.ready=function(embedinfo){$zoho.salesiq.floatbutton.visible("hide");}
+</script>
 	</body>
 </html>

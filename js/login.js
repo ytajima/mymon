@@ -11,7 +11,7 @@ $(document).ready(function(){
 		})
 		.done(function( data ){
 			if(data.status == 'fail'){
-				location.href = "/testApp/error.php";
+				location.href = "/error.php";
 			}
 			else{
 				// エラー表示のクリア
@@ -23,14 +23,14 @@ $(document).ready(function(){
 				}
 				else{
 					// マイページへ遷移
-					location.href = '/testApp/mypage.php';
+					location.href = '/mypage.php';
 				}
 			}
 		});
 		return false;
 	});
 	$("#toIndex").click(function(){
-		location.href = "/testApp/index.php";
+		location.href = "/index.php";
 		return false;
 	});
 });

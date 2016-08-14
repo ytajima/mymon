@@ -1,13 +1,13 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT'].'/testApp/config/define_db.php');
-require_once($_SERVER['DOCUMENT_ROOT'].'/testApp/module/models/M_HANYO.php');
-require_once($_SERVER['DOCUMENT_ROOT'].'/testApp/module/view/InputUserView.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/config/define_db.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/module/models/M_HANYO.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/module/view/InputUserView.php');
 
 session_start();
 
 if(!isset($_SESSION['csrf-requested-token']) || empty($_SESSION['csrf-requested-token'])){
 	header("HTTP/1.1 301 Moved Permanently");
-	header("Location: /testApp/index.php");
+	header("Location: /index.php");
 	exit;
 }
 ?>

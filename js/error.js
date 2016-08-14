@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$("#toIndex").click(function(){
-		location.href = "/testApp/index.php";
+		location.href = "/index.php";
 		return false;
 	});
 });

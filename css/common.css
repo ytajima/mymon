@@ -70,7 +70,7 @@ div#footer {
 	padding: 6px;
 	vertical-align: top;
 	color: #666666;
-	background: url(/testApp/img/bg.jpg) repeat-x top left #eee;
+	background: url(/img/bg.jpg) repeat-x top left #eee;
 	background-size: contain; /* CSS3 */
 	border-bottom: 1px dotted #999;
 	border-left: 1px solid #ccc;
@@ -87,11 +87,13 @@ div#footer {
 	border-right: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
 }
+#custom_admin_left img { width: 100%; }
+
 #custom_admin_left th{
 	padding: 6px;
 	vertical-align: top;
 	color: #666666;
-	background: url(/testApp/img/bg.jpg) repeat-x top left #eee;
+	background: url(/img/bg.jpg) repeat-x top left #eee;
 	background-size: contain; /* CSS3 */
 	border-bottom: 1px dotted #999;
 	border-left: 1px solid #ccc;
@@ -112,7 +114,7 @@ div#footer {
 	padding: 6px;
 	vertical-align: top;
 	color: #666666;
-	background: url(/testApp/img/bg.jpg) repeat-x top left #eee;
+	background: url(/img/bg.jpg) repeat-x top left #eee;
 	background-size: contain; /* CSS3 */
 	border-bottom: 1px dotted #999;
 	border-left: 1px solid #ccc;
@@ -329,7 +331,7 @@ td#answer_select {
 }
 .card .back {
 	display: table-cell;
-	background: url(/testApp/img/random/back.png);
+	background: url(/img/random/back.png);
 }
 .card.reverse .number {
 	display: table-cell;

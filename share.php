@@ -1,9 +1,9 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT'].'/testApp/config/define_db.php');
-require_once($_SERVER['DOCUMENT_ROOT'].'/testApp/module/common/Util.php');
-require_once($_SERVER['DOCUMENT_ROOT'].'/testApp/module/models/M_CHARACTER.php');
-require_once($_SERVER['DOCUMENT_ROOT'].'/testApp/module/models/M_TOTALCOMMENT.php');
-require_once($_SERVER['DOCUMENT_ROOT'].'/testApp/module/view/ResultExecTestView.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/config/define_db.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/module/common/Util.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/module/models/M_CHARACTER.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/module/models/M_TOTALCOMMENT.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/module/view/ResultExecTestView.php');
 
 $logger = Util::getLogger();
 
@@ -11,7 +11,7 @@ $logger = Util::getLogger();
 if(!isset($_GET['img']) || empty($_GET['img'])){
 	$logger->error('[share]imgパラメータの取得に失敗しました。');
 	header("HTTP/1.1 301 Moved Permanently");
-	header("Location: /testApp/index.php");
+	header("Location: /index.php");
 	exit;
 }
 
@@ -36,7 +36,7 @@ if(count($mcArr) == 0){
 	$logger->error('[share]キャラクタデータの取得に失敗しました。');
 	$pdo = null;
 	header("HTTP/1.1 301 Moved Permanently");
-	header("Location: /testApp/error.php");
+	header("Location: /error.php");
 	exit;
 }
 $name = $mcArr[0]['name'];
@@ -53,7 +53,7 @@ if(!empty($val)){
 		$logger->error('[share]累計コメント情報の取得に失敗しました。');
 		$pdo = null;
 		header("HTTP/1.1 301 Moved Permanently");
-		header("Location: /testApp/error.php");
+		header("Location: /error.php");
 		exit;
 	}
 	$tmpcmt = $totalcomment[0]['cmttxt'];

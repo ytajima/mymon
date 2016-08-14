@@ -1,13 +1,13 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT'].'/testApp/config/define_db.php');
-require_once($_SERVER['DOCUMENT_ROOT'].'/testApp/module/models/M_HANYO.php');
-require_once($_SERVER['DOCUMENT_ROOT'].'/testApp/module/view/UpdateUserView.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/config/define_db.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/module/models/M_HANYO.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/module/view/UpdateUserView.php');
 
 session_start();
 
 if(!isset($_SESSION['loginid']) || empty($_SESSION['loginid'])){
 	header("HTTP/1.1 301 Moved Permanently");
-	header("Location: /testApp/index.php");
+	header("Location: /index.php");
 	exit;
 }
 ?>

@@ -11,7 +11,7 @@ $(document).ready(function(){
 	})
 	.done(function( data ){
 		if(data.id == null){
-			location.href = '/testApp/error.php';
+			location.href = '/error.php';
 		}
 		else{
 			// 取得した質問内容を描画
@@ -45,13 +45,13 @@ $(document).ready(function(){
 		})
 		.done(function( data ){
 			if(data.id == null){
-				location.href = '/testApp/error.php';
+				location.href = '/error.php';
 			}
 			else if(data.id == 'success'){
 				// 3秒間待機してからフェードアウトし、画面遷移する
 				setTimeout(function(){
 					$("#modal-content,#modal-overlay").fadeOut("fast");
-					location.href = '/testApp/resultExecTest.php';
+					location.href = '/resultExecTest.php';
 				},3000);
 			}
 			else{
@@ -96,7 +96,7 @@ $(document).ready(function(){
 		})
 		.done(function( data ){
 			if(data.id == null){
-				location.href = '/testApp/error.php';
+				location.href = '/error.php';
 			}
 			else{
 				// 描画前に前回表示分を削除

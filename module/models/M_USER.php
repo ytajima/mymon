@@ -1,6 +1,6 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT'].'/testApp/module/common/Util.php');
-require_once $_SERVER['DOCUMENT_ROOT'].'/testApp/sql/m_user_define.php';
+require_once($_SERVER['DOCUMENT_ROOT'].'/module/common/Util.php');
+require_once $_SERVER['DOCUMENT_ROOT'].'/sql/m_user_define.php';
 class M_USER {
 	private $pdo = null;
 	private $userid = '';
@@ -86,6 +86,7 @@ class M_USER {
 			$stmt->bindValue(':userpswdcond', $this->userpswd);
 			$stmt->bindValue(':userpswdval', $this->userpswd);
 			$stmt->bindValue(':email', $this->email);
+            $stmt->bindValue(':limitdate', $this->limitdate); // debug
 			$stmt->bindValue(':key', $loginemail);
 			$stmt->execute();
 		}catch(Exception $e){

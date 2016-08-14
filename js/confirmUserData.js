@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$("#toInputUserData").click(function(){
-		location.href = "/testApp/inputUserData.php";
+		location.href = "/inputUserData.php";
 		return false;
 	});
 });function toComplete(){
@@ -15,11 +15,11 @@ $(document).ready(function(){
 	})
 	.done(function( data ) {
 		if(data.status == 'fail'){
-			location.href = '/testApp/error.php';
+			location.href = '/error.php';
 		}
 		else{
 			// 登録完了画面へ遷移
-			location.href = '/testApp/completeUserData.php';
+			location.href = '/completeUserData.php';
 		}
 	});
 	return false;

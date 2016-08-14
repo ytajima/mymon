@@ -1,9 +1,9 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT'].'/testApp/config/define_db.php');
-require_once($_SERVER['DOCUMENT_ROOT'].'/testApp/module/common/Util.php');
-require_once $_SERVER['DOCUMENT_ROOT'].'/testApp/module/common/jsonEncode.php';
-require_once($_SERVER['DOCUMENT_ROOT'].'/testApp/module/models/M_USER.php');
-require_once($_SERVER['DOCUMENT_ROOT'].'/testApp/module/models/T_PHTEST_TOTAL_HISTORY.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/config/define_db.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/module/common/Util.php');
+require_once $_SERVER['DOCUMENT_ROOT'].'/module/common/jsonEncode.php';
+require_once($_SERVER['DOCUMENT_ROOT'].'/module/models/M_USER.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/module/models/T_PHTEST_TOTAL_HISTORY.php');
 
 session_start();
 

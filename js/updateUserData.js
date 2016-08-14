@@ -1,10 +1,10 @@
 $(document).ready(function(){
 	$("#toMypage").click(function(){
-		location.href = "/testApp/mypage.php";
+		location.href = "/mypage.php";
 		return false;
 	});
 	$("#toUpdateUserData").click(function(){
-		location.href = "/testApp/updateUserData.php";
+		location.href = "/updateUserData.php";
 		return false;
 	});
 });
@@ -20,7 +20,7 @@ function toConfirm(){
 	})
 	.done(function( data ) {
 		if(data.status == 'fail'){
-			location.href = '/testApp/error.php';
+			location.href = '/error.php';
 		}
 		else{
 			// エラー表示のクリア
@@ -33,7 +33,7 @@ function toConfirm(){
 			}
 			else{
 				// 入力内容確認画面へ遷移
-				location.href = '/testApp/confirmUpdateUserData.php';
+				location.href = '/confirmUpdateUserData.php';
 			}
 		}
 	});

@@ -8,7 +8,7 @@ $(document).ready(function(){
 	})
 	.done(function( data ){
 		if(data.img == null){
-			location.href = '/testApp/error.php';
+			location.href = '/error.php';
 		}
 		else{
 			$('#charanm').append(data.name);
@@ -20,11 +20,11 @@ $(document).ready(function(){
 		}
 	});
 	$("#toIndex").click(function(){
-		location.href = "/testApp/index.php";
+		location.href = "/index.php";
 		return false;
 	});
 	$("#toInputUserData").click(function(){
-		location.href = "/testApp/inputUserData.php";
+		location.href = "/inputUserData.php";
 		return false;
 	});
 });

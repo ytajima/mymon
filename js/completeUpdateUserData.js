@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$("#toMypage").click(function(){
-		location.href = "/testApp/mypage.php";
+		location.href = "/mypage.php";
 		return false;
 	});
 	$("#toLogoutControl").click(function(){
@@ -13,11 +13,11 @@ $(document).ready(function(){
 		})
 		.done(function( data ) {
 			if(data.status == 'fail'){
-				location.href = '/testApp/error.php';
+				location.href = '/error.php';
 			}
 			else{
 				// トップページへ遷移
-				location.href = '/testApp/index.php';
+				location.href = '/index.php';
 			}
 		});
 		return false;

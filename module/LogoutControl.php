@@ -1,6 +1,6 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT'].'/testApp/module/common/Util.php');
-require_once $_SERVER['DOCUMENT_ROOT'].'/testApp/module/common/jsonEncode.php';
+require_once($_SERVER['DOCUMENT_ROOT'].'/module/common/Util.php');
+require_once $_SERVER['DOCUMENT_ROOT'].'/module/common/jsonEncode.php';
 
 session_start();
 

@@ -1,8 +1,8 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT'].'/testApp/config/define_db.php');
-require_once($_SERVER['DOCUMENT_ROOT'].'/testApp/module/common/Util.php');
-require_once $_SERVER['DOCUMENT_ROOT'].'/testApp/module/common/jsonEncode.php';
-require_once($_SERVER['DOCUMENT_ROOT'].'/testApp/module/models/M_PHTEST_GROWTH.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/config/define_db.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/module/common/Util.php');
+require_once $_SERVER['DOCUMENT_ROOT'].'/module/common/jsonEncode.php';
+require_once($_SERVER['DOCUMENT_ROOT'].'/module/models/M_PHTEST_GROWTH.php');
 
 session_start();
 

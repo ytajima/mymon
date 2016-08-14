@@ -1,11 +1,11 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT'].'/testApp/config/define_db.php');
-require_once($_SERVER['DOCUMENT_ROOT'].'/testApp/module/common/Util.php');
-require_once $_SERVER['DOCUMENT_ROOT'].'/testApp/module/common/jsonEncode.php';
-require_once($_SERVER['DOCUMENT_ROOT'].'/testApp/module/models/M_HANYO.php');
-require_once($_SERVER['DOCUMENT_ROOT'].'/testApp/module/models/T_PHTEST_RESULT_HISTORY.php');
-require_once($_SERVER['DOCUMENT_ROOT'].'/testApp/module/models/M_USER.php');
-require_once($_SERVER['DOCUMENT_ROOT'].'/testApp/module/view/UpdateUserView.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/config/define_db.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/module/common/Util.php');
+require_once $_SERVER['DOCUMENT_ROOT'].'/module/common/jsonEncode.php';
+require_once($_SERVER['DOCUMENT_ROOT'].'/module/models/M_HANYO.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/module/models/T_PHTEST_RESULT_HISTORY.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/module/models/M_USER.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/module/view/UpdateUserView.php');
 
 session_start();
 
@@ -117,6 +117,7 @@ if($type == 'confirm'){
 	$_SESSION['userid'] = htmlspecialchars($_POST['userid']);
 	$_SESSION['userpswd_new'] = htmlspecialchars($_POST['userpswd_new']);
 	$_SESSION['email'] = htmlspecialchars($_POST['email']);
+    $_SESSION['limit'] = htmlspecialchars($_POST['limit']); // debug
 }
 else if($type == 'complete'){
 	// ユーザマスタのインスタンス生成
@@ -129,6 +130,7 @@ else if($type == 'complete'){
 		$_POST['userpswd_new'] = null;
 	}
 	$m_user->setUserpswd($_POST['userpswd_new']);
+    $m_user->setLimitdate($_POST['limit']); // debug
 	$m_user->updateData($_SESSION['loginemail']);
 	$m_user->close();
 	if($m_user->getError() != ''){

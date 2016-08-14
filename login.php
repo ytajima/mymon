@@ -6,7 +6,7 @@ if(!isset($_SESSION['loginid']) || empty($_SESSION['loginid'])){
 }
 else{
 	header("HTTP/1.1 301 Moved Permanently");
-	header("Location: /testApp/mypage.php");
+	header("Location: /mypage.php");
 	exit;
 }
 

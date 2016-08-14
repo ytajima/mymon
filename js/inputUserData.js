@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$("#toInputUserData").click(function(){
-		location.href = "/testApp/inputUserData.php";
+		location.href = "/inputUserData.php";
 		return false;
 	});
 });
@@ -16,7 +16,7 @@ function toConfirm(){
 	})
 	.done(function( data ) {
 		if(data.status == 'fail'){
-			location.href = '/testApp/error.php';
+			location.href = '/error.php';
 		}
 		else{
 			// エラー表示のクリア
@@ -30,7 +30,7 @@ function toConfirm(){
 			}
 			else{
 				// 入力内容確認画面へ遷移
-				location.href = '/testApp/confirmUserData.php';
+				location.href = '/confirmUserData.php';
 			}
 		}
 	});

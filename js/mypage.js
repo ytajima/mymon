@@ -8,7 +8,7 @@ $(document).ready(function(){
 	})
 	.done(function( data ){
 		if(data.status == 'fail'){
-			location.href = '/testApp/error.php';
+			location.href = '/error.php';
 		}
 		else if(data.status == 'done'){
 			// 次の実行可能日を表示する
@@ -56,7 +56,7 @@ $(document).ready(function(){
 		return false;
 	});
 	$("#toUpdateUserData").click(function(){
-		location.href = "/testApp/updateUserData.php";
+		location.href = "/updateUserData.php";
 		return false;
 	});
 	$("#toLogoutControl").click(function(){
@@ -69,17 +69,17 @@ $(document).ready(function(){
 		})
 		.done(function( data ) {
 			if(data.status == 'fail'){
-				location.href = '/testApp/error.php';
+				location.href = '/error.php';
 			}
 			else{
 				// トップページへ遷移
-				location.href = '/testApp/index.php';
+				location.href = '/index.php';
 			}
 		});
 		return false;
 	});
 	$("#toInputExecGrowthTest").click(function(){
-		location.href = "/testApp/inputExecGrowthTest.php";
+		location.href = "/inputExecGrowthTest.php";
 		return false;
 	});
 });

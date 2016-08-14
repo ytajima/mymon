@@ -3,7 +3,7 @@ session_start();
 
 if(!isset($_SESSION['csrf-requested-token']) || empty($_SESSION['csrf-requested-token'])){
 	header("HTTP/1.1 301 Moved Permanently");
-	header("Location: /testApp/index.php");
+	header("Location: /index.php");
 	exit;
 }
 ?>
@@ -71,5 +71,11 @@ if(!isset($_SESSION['csrf-requested-token']) || empty($_SESSION['csrf-requested-
 				<div id="fb-root"></div>
 			</div>
 		</div>
+<script type="text/javascript">
+var $zoho= $zoho || {salesiq:{values:{},ready:function(){}}};var d=document;s=d.createElement("script");s.type="text/javascript";
+s.defer=true;s.src="https://salesiq.zoho.com/jica/float.ls?embedname=chat";
+t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);
+$zoho.salesiq.ready=function(embedinfo){$zoho.salesiq.floatbutton.visible("hide");}
+</script>
 	</body>
 </html>

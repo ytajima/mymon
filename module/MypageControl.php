@@ -1,13 +1,13 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT'].'/testApp/config/define_db.php');
-require_once($_SERVER['DOCUMENT_ROOT'].'/testApp/module/common/Util.php');
-require_once $_SERVER['DOCUMENT_ROOT'].'/testApp/module/common/jsonEncode.php';
-require_once($_SERVER['DOCUMENT_ROOT'].'/testApp/module/models/M_HANYO.php');
-require_once($_SERVER['DOCUMENT_ROOT'].'/testApp/module/models/M_CHARACTER.php');
-require_once($_SERVER['DOCUMENT_ROOT'].'/testApp/module/models/M_TOTALCOMMENT.php');
-require_once($_SERVER['DOCUMENT_ROOT'].'/testApp/module/models/T_PHTEST_TOTAL_HISTORY.php');
-require_once($_SERVER['DOCUMENT_ROOT'].'/testApp/module/models/T_PHTEST_PENALTY_HISTORY.php');
-require_once($_SERVER['DOCUMENT_ROOT'].'/testApp/module/view/ResultExecTestView.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/config/define_db.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/module/common/Util.php');
+require_once $_SERVER['DOCUMENT_ROOT'].'/module/common/jsonEncode.php';
+require_once($_SERVER['DOCUMENT_ROOT'].'/module/models/M_HANYO.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/module/models/M_CHARACTER.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/module/models/M_TOTALCOMMENT.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/module/models/T_PHTEST_TOTAL_HISTORY.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/module/models/T_PHTEST_PENALTY_HISTORY.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/module/view/ResultExecTestView.php');
 
 session_start();
 

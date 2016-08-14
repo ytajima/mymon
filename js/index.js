@@ -1,10 +1,10 @@
 $(document).ready(function(){
 	$("#toLogin").click(function(){
-		location.href = "/testApp/login.php";
+		location.href = "/login.php";
 		return false;
 	});
 	$("#toInputAttribute").click(function(){
-		location.href = "/testApp/inputAttribute.php";
+		location.href = "/inputAttribute.php";
 		return false;
 	});
 });
