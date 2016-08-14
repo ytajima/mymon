@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS T_PHTEST_PENALTY_HISTORY(
+	seq BIGINT(10) AUTO_INCREMENT COMMENT'順序',
+	userid VARCHAR(100) NOT NULL COMMENT'ユーザID',
+	val BIGINT(10) NOT NULL COMMENT'ペナルティ値',
+	adddate VARCHAR(50) NOT NULL COMMENT'付与日時',
+	createdate TIMESTAMP COMMENT'作成日時',
+	CONSTRAINT t_phtest_penalty_history_pk PRIMARY KEY(seq)
+)
+ENGINE InnoDB
+comment='育成心理テストペナルティ履歴テーブル';

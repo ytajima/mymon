@@ -1,0 +1,430 @@
+@charset "utf-8";
+@media only screen and (min-width: 320px) and (max-width: 374px){
+
+/* 全体のレイアウト *************************************************************/
+body{
+	width:100%;
+	text-align: center;
+	font-family:'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+	background-color: #ffffff;
+	padding:0px;
+	margin:0px;
+}
+
+/* content領域のレイアウト *************************************************************/
+div#content {
+	width: 303px;
+	margin: 0 auto;
+	padding: 70px 10px 30px 10px;
+	text-align: center;
+	border-radius: 6px;
+	background: -moz-linear-gradient(top, #d4d4d4, #969696);
+	background: -webkit-linear-gradient(top, #d4d4d4, #969696);
+	background: -ms-linear-gradient(top, #d4d4d4, #969696);
+	position:relative;/* 重ね */
+}
+
+/* header領域のレイアウト *************************************************************/
+div#header {
+	height: 72px;/* マイページの高さに合わせる */
+	text-align: left;
+	text-indent: 10px;
+	font-size: 1.2em;
+	margin:0px;/* 重ね */
+	margin-top:-60px;/* 重ね */
+	position:relative;/* 重ね */
+}
+
+/* main領域のレイアウト *************************************************************/
+div#main {
+	height: 426px;/* ユーザ情報更新の高さに合わせる */
+	width: 303px;
+	background:#ffffff;
+	display: table-cell;/* 垂直方向センタリング */
+	vertical-align: middle;/* 垂直方向センタリング */
+}
+div#main_left {
+	width: 303px;
+}
+div#main_right {
+	width: 303px;
+}
+
+/* footer領域のレイアウト *************************************************************/
+div#footer {
+	background:#ffffff;
+}
+
+/* footer領域のレイアウト *************************************************************/
+div#footer {
+	background:#ffffff;
+}
+
+/* tableのレイアウト *************************************************************/
+#custom_admin{
+	width: 303px;
+	border-collapse: collapse;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+#custom_admin th{
+	font-size: 0.75em;
+	padding: 6px;
+	vertical-align: top;
+	color: #666666;
+	background: url(/testApp/img/bg.jpg) repeat-x top left #eee;
+	background-size: contain; /* CSS3 */
+	border-bottom: 1px dotted #999;
+	border-left: 1px solid #ccc;
+}
+#custom_admin td{
+	font-size: 0.75em;
+	padding: 6px;
+	border-bottom: 1px dotted #999;
+	border-left: 1px solid #ccc;
+}
+#custom_admin_left{
+	width: 303px;
+	font-size: 1.0em;
+	border-collapse: collapse;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+#custom_admin_left th{
+	padding: 6px;
+	vertical-align: top;
+	color: #666666;
+	background: url(/testApp/img/bg.jpg) repeat-x top left #eee;
+	background-size: contain; /* CSS3 */
+	border-bottom: 1px dotted #999;
+	border-left: 1px solid #ccc;
+}
+#custom_admin_left td{
+	padding: 6px;
+	border-bottom: 1px dotted #999;
+	border-left: 1px solid #ccc;
+}
+#custom_admin_right{
+	width: 303px;
+	font-size: 1.0em;
+	border-collapse: collapse;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+#custom_admin_right th{
+	padding: 6px;
+	vertical-align: top;
+	color: #666666;
+	background: url(/testApp/img/bg.jpg) repeat-x top left #eee;
+	background-size: contain; /* CSS3 */
+	border-bottom: 1px dotted #999;
+	border-left: 1px solid #ccc;
+}
+#custom_admin_right td{
+	padding: 6px;
+	border-bottom: 1px dotted #999;
+	border-left: 1px solid #ccc;
+}
+input#userid {
+	width: 165px;
+	height: 25px;
+	font-size: 1.0em;
+}
+input#userpswd {
+	width: 165px;
+	height: 25px;
+	font-size: 1.0em;
+}
+input#userpswd_conf {
+	width: 165px;
+	height: 25px;
+	font-size: 1.0em;
+}
+input#userpswd_new {
+	width: 165px;
+	height: 25px;
+	font-size: 1.0em;
+}
+input#email {
+	width: 165px;
+	height: 25px;
+	font-size: 1.0em;
+}
+select#age {
+	width: 165px;
+	height: 27px;
+	font-size: 1.0em;
+}
+select#gender {
+	width: 165px;
+	height: 27px;
+	font-size: 1.0em;
+}
+select#course {
+	width: 165px;
+	height: 27px;
+	font-size: 1.0em;
+}
+
+/* 個別のレイアウト *************************************************************/
+#questionNum {
+	width: 125px;
+}
+#contentData {
+	text-align: left;
+	text-indent: 10px;
+	font-size: 1.5em;
+}
+#answer_select {
+	margin: 0 auto;
+	text-align: center;
+}
+#page_select {
+	margin: 0 auto;
+	text-align: center;
+}
+#resultImg {
+	width: 303px;
+}
+#resultCmt {
+	width: 303px;
+	text-align: left;
+}
+span.error {
+	text-align: left;
+	font-weight: bold;
+	color: #FF0000;
+}
+table.index_table {
+	margin-left: auto;
+	margin-right: auto;
+}
+p.caption {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+p.thanks {
+	font-size: 1.2em;
+}
+p.help {
+	font-size: 0.9em;
+}
+span#pagenate {
+	font-size: 1.0em;
+}
+span#exec_day {
+	font-size: 0.9em;
+}
+
+/* buttonのレイアウト *************************************************************/
+button.customize {
+	font-size: 1.0em;
+	font-weight: bold;
+	font-family:'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+	padding: 5px 15px;
+	color: #ffffff;
+	box-shadow: 2px 2px 3px 1px #666;
+	-moz-box-shadow: 2px 2px 3px 1px #666;
+	-webkit-box-shadow: 2px 2px 3px 1px #666;
+	text-shadow: 1px 1px 2px #000;
+	border: 1px solid #969696;
+	background: -moz-linear-gradient(top, #e7e7e7, #969696);
+	background: -webkit-linear-gradient(top, #e7e7e7, #969696);
+	background: -ms-linear-gradient(top, #e7e7e7, #969696);
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+button.customize:hover {
+	opacity: 0.8;
+}
+button.customize:disabled {
+	cursor: default;
+	background: #969696;
+}
+button.customize:disabled:hover {
+	opacity: 1;
+}
+
+/* index.phpのレイアウト *************************************************************/
+button.index_buttons {
+	width: 140px;
+	height: 140px;
+	font-size: 1.1em;
+	border: 1px solid #d4d4d4;
+	background: -moz-linear-gradient(top, #ffffff, #d4d4d4);
+	background: -webkit-linear-gradient(top, #ffffff, #d4d4d4);
+	background: -ms-linear-gradient(top, #ffffff, #d4d4d4);
+}
+
+
+/* mypage.phpのレイアウト *************************************************************/
+#mypage_header {
+	height: 72px;
+	margin:0px;/* 重ね */
+	margin-top:-60px;/* 重ね */
+	position:relative;/* 重ね */
+}
+#mypage_start {
+	background:#ffffff;
+	border-collapse: collapse;
+}
+#mypage_banner {
+	background:#ffffff;
+}
+#loginUserId {
+	margin:10px;
+	padding:10px;
+	text-indent: 5px;
+	text-align: left;
+	float: left;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+#configure {/* ユーザ名が長いとずれるので2段組み */
+	padding-bottom: 5px;
+	padding-top: 3px;
+	padding-right: 5px;
+	text-align: right;
+}
+#banner {
+	width: 303px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+button.mypage_size {
+	font-size: 0.7em;
+}
+
+/* 選択肢のレイアウト *************************************************************/
+td#answer_select {
+	height: 150px;
+}
+#answer_select input {
+	display: none;
+}
+#answer_select label{
+	display: block;
+	float: left;
+	cursor: pointer;
+	width: 75px;
+	height: 50px;
+	padding:10px;
+	background: #c0c0c0;
+	color: #000000;
+	font-size: 1.1em;
+	font-weight: bold;
+	line-height: 1;
+	transition: .2s;
+}
+#answer_select label:first-of-type{
+	border-radius: 10px 0 0 10px;
+}
+#answer_select label:last-of-type{
+	border-radius: 0 10px 10px 0;
+}
+#answer_select input[type="radio"]:checked + .switch-on {
+	background-color: #0000ff;
+	color: #ffffff;
+}
+#answer_select input[type="radio"]:checked + .switch-off {
+	background-color: #0000ff;
+	color: #ffffff;
+}
+#answer_select input[type="radio"]:checked + .switch-none {
+	background-color: #0000ff;
+	color: #ffffff;
+}
+
+/* inputExecRandomTest.phpのレイアウト *************************************************************/
+.cardList {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	height: 300px;
+}
+.card,
+.inner,
+.card .number,
+.card .back {
+	margin-left: 20px;/*位置調整*/
+	width: 220px;
+	height: 300px;
+	border-radius: 12px;
+}
+.card {
+	display: inline-block;
+	perspective: 303px;
+	-webkit-perspective: 303px;
+}
+.inner {
+	cursor: pointer;
+	overflow: hidden;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+.card .number,
+.card .back {
+	vertical-align: middle;
+	text-align: center;
+	background: #fff;
+}
+.card .number {
+	box-sizing: border-box;
+	display: none;
+	border: 1px solid #ccc;
+	background: #fff;
+}
+.card .number img {
+	width: 120px;
+	height: 120px;
+}
+.card .back {
+	display: table-cell;
+	background: url(/testApp/img/random/back.png);
+}
+.card.reverse .number {
+	display: table-cell;
+}
+.card.reverse .back {
+	display: none;
+}
+
+#add_point {
+	font-size: 4.0em;
+	font-weight: bold;
+}
+
+/* モーダルウィンドウのレイアウト *************************************************************/
+#modal-content{
+	margin-top:-150px;
+    margin-left:-125px;
+	left:50%;
+	top:50%;
+	font-size: 1.5em;
+	font-weight: bold;
+	padding:10px 20px;
+	border:2px solid #aaa;
+	background:#fff;
+	position:fixed;
+	display:none;
+	z-index:2;
+}
+#modal-overlay{
+	width:100%;
+	height:120%;
+	left:0;
+	top:0;
+	background-color:rgba(0,0,0,0.75);
+	position:fixed;
+	display:none;
+	z-index:1;
+}
+
+}
+
+
