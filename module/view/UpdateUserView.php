@@ -23,6 +23,12 @@ class UpdateUserView {
 			<td><span id='err_userpswd_new' class='error'></span><input type='password' name='userpswd_new' id='userpswd_new' value=''></td>
 			</tr>
 			<tr>
+			<!-- start debug -->
+			<th>育成完了日時　※デバッグ時のみ使用</th>
+			<td><span id='err_limit' class='error'></span><input type='text' name='limit' id='limit' value='".$_SESSION['limit']."'></td>
+			</tr>
+			<!-- end debug -->
+			<tr>
 			<th>コース選択</th>
 			<td>
 		";
@@ -49,6 +55,9 @@ class UpdateUserView {
 			<input type='hidden' id='userid' name='userid' value='".$_SESSION['userid']."'>
 			<input type='hidden' id='email' name='email' value='".$_SESSION['email']."'>
 			<input type='hidden' id='userpswd_new' name='userpswd_new' value='".$_SESSION['userpswd_new']."'>
+			<!-- start debug -->
+			<input type='hidden' id='limit' name='limit' value='".$_SESSION['limit']."'>
+			<!-- end debug -->
 			<tr>
 			<th>表示名</th>
 			<td>".$_SESSION['userid']."</td>
@@ -82,6 +91,13 @@ class UpdateUserView {
 		$html .= "
 			</td>
 			</tr>
+			<!-- start debug -->
+			<tr>
+			<th>育成完了日時　※デバッグ時のみ使用</th>
+			<td>".$_SESSION['limit']."</td>
+			</tr>
+			<!-- end debug -->
+
 			</table>
 			</form>
 			<button class='customize' id='toUpdateUserData' type='submit'>戻る</button>

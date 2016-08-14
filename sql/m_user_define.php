@@ -47,6 +47,7 @@ define ("USER004","
 	set
 		a.userid = :userid,
 		a.email = :email,
+		a.limitdate = :limitdate,
 		a.userpswd = CASE WHEN :userpswdcond IS NULL THEN a.userpswd ELSE :userpswdval END
 	WHERE
 		a.email = :key
