@@ -95,7 +95,20 @@ class M_USER {
 		}
 	}
 
-	function beginTransaction() {
+    function updateDebug($loginemail) {
+        try{
+            $stmt = $this->pdo->prepare(USER005);
+            $this->logger->debug(USER005);
+            $stmt->bindValue(':limitdate', $this->limitdate); // debug
+            $stmt->bindValue(':key', $loginemail);
+            $stmt->execute();
+        }catch(Exception $e){
+            $this->setError($e->getMessage());
+            $this->logger->error($e->getMessage(), $e);
+        }
+    }
+
+    function beginTransaction() {
 		$this->pdo->beginTransaction();
 	}
 

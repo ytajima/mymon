@@ -47,8 +47,17 @@ define ("USER004","
 	set
 		a.userid = :userid,
 		a.email = :email,
-		a.limitdate = :limitdate,
 		a.userpswd = CASE WHEN :userpswdcond IS NULL THEN a.userpswd ELSE :userpswdval END
+	WHERE
+		a.email = :key
+	and
+		a.delflg = '0'
+");
+define ("USER005","
+	update
+		M_USER a
+	set
+		a.limitdate = :limitdate
 	WHERE
 		a.email = :key
 	and
