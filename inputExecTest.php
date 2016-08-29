@@ -62,10 +62,10 @@ if(!isset($_SESSION['csrf-requested-token']) || empty($_SESSION['csrf-requested-
 		</div>
 		<div id="modal-overlay"></div>
 <script type="text/javascript">
-var $zoho= $zoho || {salesiq:{values:{},ready:function(){}}};var d=document;s=d.createElement("script");s.type="text/javascript";
-s.defer=true;s.src="https://salesiq.zoho.com/jica/float.ls?embedname=chat";
-t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);
-$zoho.salesiq.ready=function(embedinfo){$zoho.salesiq.floatbutton.visible("hide");}
+    var $zoho= $zoho || {salesiq:{values:{},ready:function(){}}};var d=document;s=d.createElement("script");s.type="text/javascript";
+    s.defer=true;s.src="https://salesiq.zoho.com/jica/float.ls?embedname=chat";
+    t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);
+    $zoho.salesiq.ready=function(embedinfo){$zoho.salesiq.floatbutton.visible("hide");}
 </script>
 	</body>
 </html>

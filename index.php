@@ -73,12 +73,12 @@ else{
     <meta name="twitter:description" content="">
     <meta name="twitter:title" content="マイモンカウンセリング">
 
-    <link rel="stylesheet" id="bootstrap-style-css" href="css/bootstrap.css" type="text/css" media="all">
-    <link rel="stylesheet" id="brood-style-css" href="css/style.css" type="text/css" media="all">
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/jquery-migrate.min.js"></script>
-    <script type="text/javascript" src="js/sakura.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <link rel="stylesheet" id="bootstrap-style-css" href="/css/bootstrap.css" type="text/css" media="all">
+    <link rel="stylesheet" id="brood-style-css" href="/css/style.css" type="text/css" media="all">
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="/js/sakura.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
 </head>
 
 <body class="home blog logged-in admin-bar  customize-support" style="visibility: visible;">
@@ -135,7 +135,7 @@ else{
 </div><!-- #page -->
 <script type="text/javascript">
     var $zoho= $zoho || {salesiq:{values:{},ready:function(){}}};var d=document;s=d.createElement("script");s.type="text/javascript";
-    s.defer=true;s.src="https:/salesiq.zoho.com/jica/float.ls?embedname=chat";
+    s.defer=true;s.src="https://salesiq.zoho.com/jica/float.ls?embedname=chat";
     t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);
     $zoho.salesiq.ready=function(embedinfo){$zoho.salesiq.floatbutton.visible("hide");}
 </script>
