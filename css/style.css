@@ -930,3 +930,82 @@ p.site-title{
     width: 100%;
   }
 }
+
+/* 元デザインのCSS *******************************/
+/* 選択肢のレイアウト *************************************************************/
+#contentData {
+    text-align: left;
+    text-indent: 10px;
+    font-size: 17px;
+}
+
+td#answer_select {
+    height: 120px;
+}
+#answer_select input {
+    display: none;
+}
+#answer_select label{
+    display: block;
+    float: left;
+    cursor: pointer;
+    width: 180px;
+    height: 50px;
+    padding: 15px;
+    margin: 5px;
+    background: #c0c0c0;
+    color: #000000;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1;
+    transition: .2s;
+}
+#answer_select label:first-of-type{
+    border-radius: 10px 10px 10px 10px;
+}
+#answer_select label:last-of-type{
+    border-radius: 10px 10px 10px 10px;
+}
+#answer_select input[type="radio"]:checked + .switch-on {
+    background-color: #e06666;
+    color: #ffffff;
+}
+#answer_select input[type="radio"]:checked + .switch-off {
+    background-color: #e06666;
+    color: #ffffff;
+}
+#answer_select input[type="radio"]:checked + .switch-none {
+    background-color: #e06666;
+    color: #ffffff;
+}
+button.customize {
+    font-size: 1.0em;
+    font-weight: bold;
+    font-family:'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+    padding: 5px 15px;
+    color: #ffffff;
+    box-shadow: 2px 2px 3px 1px #666;
+    -moz-box-shadow: 2px 2px 3px 1px #666;
+    -webkit-box-shadow: 2px 2px 3px 1px #666;
+    text-shadow: 1px 1px 2px #000;
+    border: 1px solid #969696;
+    background: -moz-linear-gradient(top, #e7e7e7, #969696);
+    background: -webkit-linear-gradient(top, #e7e7e7, #969696);
+    background: -ms-linear-gradient(top, #e7e7e7, #969696);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button.customize:hover {
+    opacity: 0.8;
+}
+button.customize:disabled {
+    cursor: default;
+    background: #969696;
+}
+button.customize:disabled:hover {
+    opacity: 1;
+}

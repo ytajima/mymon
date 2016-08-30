@@ -133,3 +133,5 @@ session_start();
             Proudly Powered by mymon<span class="sep"></span></div><!-- .site-info -->
     </footer><!-- #colophon -->
 </div><!-- #page -->
+</body>
+</html>
