@@ -89,8 +89,7 @@ else{
                 <div class="site-branding">
                     <div class="site-branding_text">
                         <h1 class="site-title"><a href="/" rel="home">マイモンカウンセリング</a></h1>
-                        <p class="site-description">
-                            											</p>
+                        <p class="site-description"></p>
                     </div><!-- .site-branding_text -->
                     <button data-target="#site-navigation" data-toggle="collapse" class="navbar-toggle" type="button" aria-expanded="true">
                         <span class="sr-only">Toggle navigation</span>
@@ -100,8 +99,8 @@ else{
                     </button>
                 </div><!-- .site-branding -->
                 <nav id="site-navigation" class="main-navigation navbar-collapse collapse" role="navigation">
-                    <ul class="nav navbar-nav"><li><a href="./login.php">ログイン</a></li></ul>
-                    <ul class="nav navbar-nav"><li><a href="./inputAttribute.php">アンケートに答える</a></li></ul>
+<!--                    <ul class="nav navbar-nav"><li><a href="./login.php">ログイン</a></li></ul>-->
+                    <ul class="nav navbar-nav"><li><a href="./inputAttribute.php">心理テスト</a></li></ul>
                 </nav><!-- #site-navigation -->
             </div>
         </div>
@@ -121,7 +120,7 @@ else{
 
                             </div><!-- .entry-content -->
                             <div class="more-link">
-                                <a href="./inputAttribute.php">アンケートに答える</a>	</div>
+                                <a href="./inputAttribute.php">心理テスト</a>	</div>
                     </main><!-- #main -->
                 </div><!-- #primary -->
             </div>

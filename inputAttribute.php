@@ -96,8 +96,8 @@ session_start();
                     </button>
                 </div><!-- .site-branding -->
                 <nav id="site-navigation" class="main-navigation navbar-collapse collapse" role="navigation">
-                    <ul class="nav navbar-nav"><li><a href="./login.php">ログイン</a></li></ul>
-                    <ul class="nav navbar-nav"><li><a href="./inputAttribute.php">アンケートに答える</a></li></ul>
+<!--                    <ul class="nav navbar-nav"><li><a href="./login.php">ログイン</a></li></ul>-->
+                    <ul class="nav navbar-nav"><li><a href="./inputAttribute.php">心理テスト</a></li></ul>
                 </nav><!-- #site-navigation -->
             </div>
         </div>
