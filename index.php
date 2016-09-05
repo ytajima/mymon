@@ -120,7 +120,7 @@ else{
 
                             </div><!-- .entry-content -->
                             <div class="more-link">
-                                <a href="./inputAttribute.php">心理テスト</a>	</div>
+                                <a href="./inputAttribute.php">心理テストを始める</a>	</div>
                     </main><!-- #main -->
                 </div><!-- #primary -->
             </div>

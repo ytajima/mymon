@@ -60,14 +60,14 @@ if(!isset($_SESSION['csrf-requested-token']) || empty($_SESSION['csrf-requested-
 <!--			</div>-->
 <!--			<div class="social-area">-->
 <!--				<ul class="social-button">-->
-<!--					<!-- Twitter -->-->
+<!--					<!-- Twitter -->
 <!--					<li id='twitter' class="sc-tw"></li>-->
-<!--					<!-- Facebook -->-->
+<!--					<!-- Facebook -->
 <!--					<li id='facebook' class="sc-fb"></li>-->
-<!--					<!-- LINE -->-->
+<!--					<!-- LINE -->
 <!--					<li id='line' class="sc-li"></li>-->
 <!--				</ul>-->
-<!--				<!-- Facebook用 -->-->
+<!--				<!-- Facebook用 -->
 <!--				<div id="fb-root"></div>-->
 <!--			</div>-->
 <!--		</div>-->
