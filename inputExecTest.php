@@ -157,7 +157,7 @@ if(!isset($_SESSION['csrf-requested-token']) || empty($_SESSION['csrf-requested-
                                             <div class="more-link">
                                                 <button class='customize' id='toBack' type='submit'>前の質問へ</button>
                                                 &nbsp;<span id ='pagenate'><span id ='questionNum'></span>/<span id ='maxcount'></span></span>&nbsp;
-                                                <button class='customize' id='toExecTestControl' type='submit'>次の質問へ</button>
+                                                <button class='customize' id='toExecTestControl' type='submit' >次の質問へ</button>
                                             </div>
 <!--                                            <div class="more-link">-->
 <!--                                                <a href="javascript" id='toBack' type='submit'>前の質問へ</a>-->
@@ -173,8 +173,12 @@ if(!isset($_SESSION['csrf-requested-token']) || empty($_SESSION['csrf-requested-
                 </div><!-- #primary -->
             </div>
         </div><!-- .container -->
-
     </div><!-- #content -->
+    <div id="modal-content">
+        <p>分析処理中・・・</p>
+    </div>
+    <div id="modal-overlay"></div>
+
     <footer id="colophon" class="site-footer" role="contentinfo">
         <div class="site-info">
             Proudly Powered by mymon<span class="sep"></span></div><!-- .site-info -->

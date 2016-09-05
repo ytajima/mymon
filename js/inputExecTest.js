@@ -1,6 +1,7 @@
 $(document).ready(function(){
 	//回答が選ばれるまで、次へボタンを非活性
 	$('#toExecTestControl').attr('disabled', true);
+    $('#toExecTestControl').hide();
 
 	var data = { type : "init"};
 	$.ajax({
@@ -62,6 +63,7 @@ $(document).ready(function(){
 				$('#on').attr("checked", false);
 				$('#off').attr("checked", false);
 				$('#toExecTestControl').attr('disabled', true);
+                $('#toExecTestControl').hide();
 
 				// 取得した質問内容を描画
 				var no = data.currentorder + 1;
@@ -77,6 +79,7 @@ $(document).ready(function(){
 				if(no == data.maxcount){
 					$('#toExecTestControl').empty();
 					$('#toExecTestControl').append('結果を見る');
+                    $('#toExecTestControl').hide();
 				}
 			}
 		});
@@ -122,19 +125,24 @@ $(document).ready(function(){
 					// 戻るボタンを活性
 					$('#toBack').attr('disabled', false);
 				}
-				$('#toExecTestControl').empty();
-				$('#toExecTestControl').append('次の質問へ');
+				$('#toExecTestControl').hide();
 			}
 		});
 		return false;
 	});
 	$("#on").click(function(){
 		//回答が選ばれたら、次へボタンを活性
-		$('#toExecTestControl').attr('disabled', false);
+//		$('#toExecTestControl').attr('disabled', false);
+        setTimeout(function(){
+            $('#toExecTestControl').click();
+        },300);
 	});
 	$("#off").click(function(){
 		//回答が選ばれたら、次へボタンを活性
-		$('#toExecTestControl').attr('disabled', false);
+//		$('#toExecTestControl').attr('disabled', false);
+        setTimeout(function(){
+            $('#toExecTestControl').click();
+        },300);
 	});
 });
 
