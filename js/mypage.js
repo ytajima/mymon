@@ -53,10 +53,6 @@ $(document).ready(function(){
 		$('#twitter').append(data.twitter);
 		$('#facebook').append(data.facebook);
 		$('#line').append(data.line);
-        // コメント表示
-        $('#resultCmt').empty();
-        $('#resultCmt').append(data.resultCmt);
-
 		return false;
 	});
 	$("#toUpdateUserData").click(function(){
