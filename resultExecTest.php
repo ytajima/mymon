@@ -146,28 +146,32 @@ if(!isset($_SESSION['csrf-requested-token']) || empty($_SESSION['csrf-requested-
                         <article id="post-1" class="post-1 post type-post status-publish format-standard hentry category-1">
                             <header class="entry-header">
 
-                                <h2 class="entry-title">テスト結果表示</h2>
+                                <h2 class="entry-title">マイモンチェック結果</h2>
                             </header>
                             <div id='main'>
-                                <div id='main_left'>
-                                    <table id='custom_admin_left' >
-                                        <tr>
-                                        <th id='charanm'></th>
-                                        </tr>
-                                        <tr>
-                                        <td id='resultImg'></td>
-                                        </tr>
-                                    </table>
-                                </div>
-                                <div id='main_right'>
-                                    <table id='custom_admin_right' >
-                                        <tr>
-                                        <th>コメント</th>
-                                        </tr>
-                                        <tr>
-                                        <td id='resultCmt'></td>
-                                        </tr>
-                                    </table>
+                                <table id='custom_admin_left' >
+                                    <tr>
+                                    <th id='charanm'></th>
+                                    </tr>
+                                    <tr>
+                                    <td id='resultImg'></td>
+                                    </tr>
+                                </table>
+                                <table id='custom_admin_right' >
+                                    <tr>
+                                    <th>コメント</th>
+                                    </tr>
+                                    <tr>
+                                    <td id='resultCmt'></td>
+                                    </tr>
+                                </table>
+
+                                <div class="entry-header">
+                                    <h2 class="entry-title">自己肯定率
+                                        <div id='selfPositiveRate' class="self-positive-rate">
+                                        </div>
+                                        ％
+                                    </h2>
                                 </div>
 <!--                                <div id='clear'>-->
 <!--                                    <button class='customize' id='toIndex' type='submit'>終了する</button>-->

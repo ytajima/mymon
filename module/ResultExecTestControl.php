@@ -55,7 +55,6 @@ if($type == 'init'){
 	$t_phtest_basic_history->getCountAnswerById();
 	$t_phtest_basic_history->close();
 	$countArr = $t_phtest_basic_history->getResultList();
-
 	if(count($countArr) == 0){
 		// 0件の場合は回答がすべて「いいえ」なので、結果を「火5」とする
 		$m_character = new M_CHARACTER($pdo);
@@ -68,6 +67,7 @@ if($type == 'init'){
 					'name' => $mcArr[$i]['name'],
 					'img' => $view->img($mcArr[$i]['name'], $mcArr[$i]['imgfilenm']),
 					'cmt' => $mcArr[$i]['cmttxt'],
+                    'selfPositiveRate' => 100,
 					'twitter' => $view->twitter('301.'.'5', ''),
 					'facebook' => $view->facebook('301.'.'5', ''),
 					'line' => $view->line('301.'.'5', '')
@@ -92,6 +92,15 @@ if($type == 'init'){
 		$m_character->close();
 		$mcArr = $m_character->getResultList();
 
+        // 自己肯定率を算出する。
+        /** はいが１とすると、
+                （３５－はいの数）÷３５×１００でした。
+            はいが２０だった場合
+                （３５－２０）＝１５
+            １５÷３５×１００＝４２．８％
+         **/
+        $selfPositiveRate = round((35 - $rankArr[0]['total']) / 35 * 100, 1);
+
 		// 心理テスト結果履歴テーブルのインスタンス生成
 		// トークンとキャラクターIDを紐づける
 		$t_phtest_result_history = new T_PHTEST_RESULT_HISTORY($pdo);
@@ -115,6 +124,7 @@ if($type == 'init'){
 				'name' => $mcArr[0]['name'],
 				'img' => $view->img($mcArr[0]['name'], $mcArr[0]['imgfilenm']),
 				'cmt' => $mcArr[0]['cmttxt'],
+                'selfPositiveRate' => $selfPositiveRate,
 				'twitter' => $view->twitter($countArr[0]['attrcd'].".".$rankArr[0]['rank'], ''),
 				'facebook' => $view->facebook($countArr[0]['attrcd'].".".$rankArr[0]['rank'], ''),
 				'line' => $view->line($countArr[0]['attrcd'].".".$rankArr[0]['rank'], '')

@@ -14,6 +14,7 @@ $(document).ready(function(){
 			$('#charanm').append(data.name);
 			$('#resultImg').append(data.img);
 			$('#resultCmt').append(data.cmt);
+            $('#selfPositiveRate').append(data.selfPositiveRate);
 			$('#twitter').append(data.twitter);
 			$('#facebook').append(data.facebook);
 			$('#line').append(data.line);
