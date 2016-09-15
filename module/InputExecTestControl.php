@@ -43,7 +43,7 @@ $pdo = db_connect_pdo();
 if($type == 'init'){
 	// 2回目以降はスキップ
 	if(!isset($_SESSION['currentorder'])){
-		// 基本心理テストマスタのインスタンス生成
+		// 基本マイモンチェックマスタのインスタンス生成
 		$m_phtest_basic = new M_PHTEST_BASIC($pdo);
 
 		// 質問リストの取得
@@ -129,12 +129,12 @@ else if($type == 'next'){
 		array_push($_SESSION['answerlist'], $anwerArr);
 	}
 
-	//すべての質問に回答されたら心理テスト履歴テーブルに登録
+	//すべての質問に回答されたらマイモンチェック履歴テーブルに登録
 	if($_SESSION['currentorder'] == $_SESSION['maxcount'] - 1){
 		$_SESSION['currentorder'] = 0;
 		$logger->debug($_SESSION['answerlist']);
 
-		// 心理テスト履歴テーブルのインスタンス生成
+		// マイモンチェック履歴テーブルのインスタンス生成
 		$t_phtest_basic_history = new T_PHTEST_BASIC_HISTORY($pdo);
 		$t_phtest_basic_history->beginTransaction();
 		$t_phtest_basic_history->setId($_POST['csrf-requested-token']);
@@ -145,7 +145,7 @@ else if($type == 'next'){
 			if($t_phtest_basic_history->getError() != null){
 				$t_phtest_basic_history->rollback();
 				$t_phtest_basic_history->close();
-				$logger->error('[InputExecTestControl]心理テスト回答内容の登録に失敗しました。');
+				$logger->error('[InputExecTestControl]マイモンチェック回答内容の登録に失敗しました。');
 				$resultArr = array(
 						'id' => null
 				);

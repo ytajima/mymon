@@ -39,15 +39,15 @@ define("PHTHIS003", "
 		(
 			case
 			when
-				count(a.answer) <= 4 then '5'
+				count(a.answer) <= 7 then '5'
 			when
-				count(a.answer) >= 5 and count(a.answer) <= 10 then '4'
+				count(a.answer) >= 8 and count(a.answer) <= 13 then '4'
 			when
-				count(a.answer) >= 11 and count(a.answer) <= 20 then '3'
+				count(a.answer) >= 16 and count(a.answer) <= 20 then '3'
 			when
-				count(a.answer) >= 21 and count(a.answer) <= 29 then '2'
+				count(a.answer) >= 21 and count(a.answer) <= 27 then '2'
 			when
-				count(a.answer) >= 30 then '1'
+				count(a.answer) >= 28 then '1'
 			else '0'
 			end
 		) rank

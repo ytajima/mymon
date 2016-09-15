@@ -6,4 +6,4 @@ CREATE TABLE IF NOT EXISTS T_PHTEST_RESULT_HISTORY(
 	CONSTRAINT t_phtest_result_history_pk PRIMARY KEY(seq)
 )
 ENGINE InnoDB
-comment='心理テスト結果履歴テーブル';
+comment='マイモンチェック結果履歴テーブル';

@@ -7,4 +7,4 @@ CREATE TABLE IF NOT EXISTS T_PHTEST_TOTAL_HISTORY(
 	CONSTRAINT t_phtest_total_history_pk PRIMARY KEY(seq)
 )
 ENGINE InnoDB
-comment='育成心理テスト加減値累計テーブル';
+comment='育成マイモンチェック加減値累計テーブル';

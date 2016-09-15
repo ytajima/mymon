@@ -14,4 +14,4 @@ CREATE TABLE IF NOT EXISTS M_PHTEST_GROWTH(
 	CONSTRAINT m_phtest_growth_pk PRIMARY KEY(id,attrcd)
 )
 ENGINE InnoDB
-comment='育成用心理テストマスタ';
+comment='育成用マイモンチェックマスタ';

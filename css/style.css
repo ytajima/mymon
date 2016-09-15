@@ -469,6 +469,9 @@ p.site-title{
   background-color: transparent;
   border-color: 1px solid #e47b7b;
 }
+.more-link span {
+    font-size: 20px;
+}
 .edit-link {
   position: absolute;
   bottom: 10px;

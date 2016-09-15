@@ -21,12 +21,12 @@ if(!isset($_SESSION['csrf-requested-token']) || empty($_SESSION['csrf-requested-
 <!--		<link rel='stylesheet' href='css/common.css' type='text/css'  media='screen' />-->
 <!--		<script type='text/javascript'  src='js/common/jquery-1.11.1.min.js'></script>-->
 <!--		<script type='text/javascript' src='js/inputExecTest.js'></script>-->
-<!--		<title>心理テスト</title>-->
+<!--		<title>マイモンチェック</title>-->
 <!--	</head>-->
 <!--	<body>-->
 <!--		<div id='content'>-->
 <!--			<div id='header'>-->
-<!--				<h2>心理テスト</h2>-->
+<!--				<h2>マイモンチェック</h2>-->
 <!--			</div>-->
 <!--			<div id='main'>-->
 <!--				<form id='inputExecTestForm' name='inputExecTestForm'>-->
@@ -46,7 +46,7 @@ if(!isset($_SESSION['csrf-requested-token']) || empty($_SESSION['csrf-requested-
 <!--					</tr>-->
 <!--					<tr>-->
 <!--						<td>-->
-<!--							<button class='customize' id='toBack' type='submit'>前の質問へ</button>-->
+<!--							<button class='customize' id='toBack' type='submit'>前に戻る</button>-->
 <!--							&nbsp;<span id ='pagenate'><span id ='questionNum'></span>/<span id ='maxcount'></span></span>&nbsp;-->
 <!--							<button class='customize' id='toExecTestControl' type='submit'>次の質問へ</button>-->
 <!--						</td>-->
@@ -82,13 +82,13 @@ if(!isset($_SESSION['csrf-requested-token']) || empty($_SESSION['csrf-requested-
     <link rel="canonical" href="http:/mymon.yourtalk.net/">
     <meta property="og:locale" content="ja_JP">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="マイモンカウンセリング">
+    <meta property="og:title" content="マインドモンスター">
     <meta property="og:description" content="">
     <meta property="og:url" content="http:/mymon.yourtalk.net/">
-    <meta property="og:site_name" content="マイモンカウンセリング">
+    <meta property="og:site_name" content="マインドモンスター">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:description" content="">
-    <meta name="twitter:title" content="マイモンカウンセリング">
+    <meta name="twitter:title" content="マインドモンスター">
 
     <link rel="stylesheet" id="bootstrap-style-css" href="/css/bootstrap.css" type="text/css" media="all">
     <link rel="stylesheet" id="brood-style-css" href="/css/style.css" type="text/css" media="all">
@@ -98,7 +98,7 @@ if(!isset($_SESSION['csrf-requested-token']) || empty($_SESSION['csrf-requested-
     <script type="text/javascript" src="/js/bootstrap.js"></script>
     <script type='text/javascript' src='/js/common/jquery-1.11.1.min.js'></script>
     <script type='text/javascript' src='/js/inputExecTest.js'></script>
-    <title>心理テスト</title>
+    <title>マイモンチェック</title>
 </head>
 
 <body class="home blog logged-in admin-bar  customize-support" style="visibility: visible;">
@@ -108,7 +108,7 @@ if(!isset($_SESSION['csrf-requested-token']) || empty($_SESSION['csrf-requested-
             <div class="col-sm-12">
                 <div class="site-branding">
                     <div class="site-branding_text">
-                        <h1 class="site-title"><a href="/" rel="home">マイモンカウンセリング</a></h1>
+                        <h1 class="site-title"><a href="/" rel="home">マインドモンスター</a></h1>
                         <p class="site-description">
                         </p>
                     </div><!-- .site-branding_text -->
@@ -121,7 +121,7 @@ if(!isset($_SESSION['csrf-requested-token']) || empty($_SESSION['csrf-requested-
                 </div><!-- .site-branding -->
                 <nav id="site-navigation" class="main-navigation navbar-collapse collapse" role="navigation">
 <!--                    <ul class="nav navbar-nav"><li><a href="./login.php">ログイン</a></li></ul>-->
-                    <ul class="nav navbar-nav"><li><a href="./inputAttribute.php">心理テスト</a></li></ul>
+                    <ul class="nav navbar-nav"><li><a href="./inputAttribute.php">マイモンチェック</a></li></ul>
                 </nav><!-- #site-navigation -->
             </div>
         </div>
@@ -134,7 +134,7 @@ if(!isset($_SESSION['csrf-requested-token']) || empty($_SESSION['csrf-requested-
                         <article id="post-1" class="post-1 post type-post status-publish format-standard hentry category-1">
                             <header class="entry-header">
 
-                                <h2 class="entry-title">心理テスト</h2>
+                                <h2 class="entry-title">マイモンチェック</h2>
                             </header>
                             <div id='main'>
                                 <form id='inputExecTestForm' name='inputExecTestForm'>
@@ -155,12 +155,12 @@ if(!isset($_SESSION['csrf-requested-token']) || empty($_SESSION['csrf-requested-
                                     <tr>
                                         <td>
                                             <div class="more-link">
-                                                <button class='customize' id='toBack' type='submit'>前の質問へ</button>
+                                                <button class='customize' id='toBack' type='submit'>前に戻る</button>
                                                 &nbsp;<span id ='pagenate'><span id ='questionNum'></span>/<span id ='maxcount'></span></span>&nbsp;
                                                 <button class='customize' id='toExecTestControl' type='submit' >次の質問へ</button>
                                             </div>
 <!--                                            <div class="more-link">-->
-<!--                                                <a href="javascript" id='toBack' type='submit'>前の質問へ</a>-->
+<!--                                                <a href="javascript" id='toBack' type='submit'>前に戻る</a>-->
 <!--                                                &nbsp;<span id ='pagenate'><span id ='questionNum'></span>/<span id ='maxcount'></span></span>&nbsp;-->
 <!--                                                <a href="javascript" id='toExecTestControl' type='submit'>次の質問へ</a>-->
 <!--                                            </div>-->

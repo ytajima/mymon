@@ -135,7 +135,7 @@ else if($type == 'confirm'){
 	$_SESSION['course'] = $_POST['course'];
 }
 else if($type == 'complete'){
-	// 心理テスト結果履歴テーブルのインスタンス生成
+	// マイモンチェック結果履歴テーブルのインスタンス生成
 	$t_phtest_result_history = new T_PHTEST_RESULT_HISTORY($pdo);
 
 	// 登録されているトークンのキャラクタIDを取得
@@ -188,7 +188,7 @@ else if($type == 'complete'){
 		);
 	}
 	else{
-		// 育成心理テスト加減値累計テーブルのインスタンス生成
+		// 育成マイモンチェック加減値累計テーブルのインスタンス生成
 		$t_phtest_total_history = new T_PHTEST_TOTAL_HISTORY($pdo);
 
 		// ログインユーザの最新日付の累計情報を取得

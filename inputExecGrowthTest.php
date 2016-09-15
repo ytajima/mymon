@@ -48,7 +48,7 @@ if(!isset($_SESSION['loginid']) || empty($_SESSION['loginid'])){
 					</tr>
 					<tr>
 						<td>
-							<button class='customize' id='toBack' type='submit'>前の質問へ</button>
+							<button class='customize' id='toBack' type='submit'>前に戻る</button>
 							&nbsp;<span id ='pagenate'><span id ='questionNum'></span>/<span id ='maxcount'></span></span>&nbsp;
 							<button class='customize' id='toExecGrowthTestControl' type='submit'>次の質問へ</button>
 						</td>

@@ -38,7 +38,7 @@ $pdo = db_connect_pdo();
 $view = new ResultExecTestView();
 
 if($type == 'init'){
-	// 育成心理テスト加減値累計テーブルのインスタンス生成
+	// 育成マイモンチェック加減値累計テーブルのインスタンス生成
 	$t_phtest_total_history = new T_PHTEST_TOTAL_HISTORY($pdo);
 
 	// ログインユーザの最新日付の累計情報を取得
@@ -48,7 +48,7 @@ if($type == 'init'){
 
 	$totalval = 0;
 	if(count($latestdate) != 0){
-		// 育成心理テストペナルティ履歴テーブルのインスタンス生成
+		// 育成マイモンチェックペナルティ履歴テーブルのインスタンス生成
 		$t_phtest_penalty_history = new T_PHTEST_PENALTY_HISTORY($pdo);
 		$t_phtest_penalty_history->beginTransaction();
 

@@ -108,7 +108,7 @@ $pdo = null;
 					</table>
 				</div>
 				<div id='clear'>
-					<p class='caption'>アンケートと心理テストに答えると<br>自分のキャラクターが確認できます</p>
+					<p class='caption'>アンケートとマイモンチェックに答えると<br>自分のキャラクターが確認できます</p>
 					<button class='customize' id='toInputAttribute' type='submit'>アンケートに答える</button>
 				</div>
 			</div>

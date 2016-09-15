@@ -7,4 +7,4 @@ CREATE TABLE IF NOT EXISTS T_PHTEST_PENALTY_HISTORY(
 	CONSTRAINT t_phtest_penalty_history_pk PRIMARY KEY(seq)
 )
 ENGINE InnoDB
-comment='育成心理テストペナルティ履歴テーブル';
+comment='育成マイモンチェックペナルティ履歴テーブル';

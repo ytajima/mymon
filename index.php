@@ -55,7 +55,7 @@ else{
 <html lang="ja" prefix="og: http:/ogp.me/ns#"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>マイモンカウンセリング</title>
+    <title>マインドモンスター</title>
     <meta charset='UTF-8'>
     <meta http-equiv='Pragma' content='no-cache' />
     <meta http-equiv='cache-control' content='no-cache' />
@@ -65,13 +65,13 @@ else{
     <link rel="canonical" href="http:/mymon.yourtalk.net/">
     <meta property="og:locale" content="ja_JP">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="マイモンカウンセリング">
+    <meta property="og:title" content="マインドモンスター">
     <meta property="og:description" content="">
     <meta property="og:url" content="http:/mymon.yourtalk.net/">
-    <meta property="og:site_name" content="マイモンカウンセリング">
+    <meta property="og:site_name" content="マインドモンスター">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:description" content="">
-    <meta name="twitter:title" content="マイモンカウンセリング">
+    <meta name="twitter:title" content="マインドモンスター">
 
     <link rel="stylesheet" id="bootstrap-style-css" href="/css/bootstrap.css" type="text/css" media="all">
     <link rel="stylesheet" id="brood-style-css" href="/css/style.css" type="text/css" media="all">
@@ -88,7 +88,7 @@ else{
             <div class="col-sm-12">
                 <div class="site-branding">
                     <div class="site-branding_text">
-                        <h1 class="site-title"><a href="/" rel="home">マイモンカウンセリング</a></h1>
+                        <h1 class="site-title"><a href="/" rel="home">マインドモンスター</a></h1>
                         <p class="site-description"></p>
                     </div><!-- .site-branding_text -->
                     <button data-target="#site-navigation" data-toggle="collapse" class="navbar-toggle" type="button" aria-expanded="true">
@@ -100,7 +100,7 @@ else{
                 </div><!-- .site-branding -->
                 <nav id="site-navigation" class="main-navigation navbar-collapse collapse" role="navigation">
 <!--                    <ul class="nav navbar-nav"><li><a href="./login.php">ログイン</a></li></ul>-->
-                    <ul class="nav navbar-nav"><li><a href="./inputAttribute.php">心理テスト</a></li></ul>
+                    <ul class="nav navbar-nav"><li><a href="./inputAttribute.php">マイモンチェック</a></li></ul>
                 </nav><!-- #site-navigation -->
             </div>
         </div>
@@ -112,15 +112,16 @@ else{
                     <main id="main" class="site-main" role="main">
                         <article id="post-1" class="post-1 post type-post status-publish format-standard hentry category-1">
                             <div class="entry-content">
-                                <p>マイモンカウンセリングとは？</p>
+                                <p>マインドモンスターとは？</p>
 
                             </div><!-- .entry-content -->
                             <div class="entry-content">
-                                <p>マイモンとは、こちらに説明文を入れてください。</p>
-
+                                <p>マインドモンスターとは、３５問のセルフチェックを答えていただきます。
+                                    問は東洋思想である「陰陽五行説」に準じた５つの感情を元に構成されており、回答に応じたモンスターを出現させ、現在の心理状況をセルフチェック出来るように設計されております。</p>
+                                <p>お気軽にチェックしてみてください！</p>
                             </div><!-- .entry-content -->
                             <div class="more-link">
-                                <a href="./inputAttribute.php">心理テストを始める</a>	</div>
+                                <a href="./inputAttribute.php">セルフチェックを始める</a>	</div>
                     </main><!-- #main -->
                 </div><!-- #primary -->
             </div>

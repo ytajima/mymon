@@ -10,4 +10,4 @@ CREATE TABLE IF NOT EXISTS T_PHTEST_GROWTH_HISTORY(
 	CONSTRAINT t_phtest_growth_history_pk PRIMARY KEY(seq)
 )
 ENGINE InnoDB
-comment='育成心理テスト履歴テーブル';
+comment='育成マイモンチェック履歴テーブル';

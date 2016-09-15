@@ -32,7 +32,7 @@ $pdo = db_connect_pdo();
 if($type == 'init'){
 	// 2回目以降はスキップ
 	if(!isset($_SESSION['currentorder'])){
-		// 育成心理テストマスタのインスタンス生成
+		// 育成マイモンチェックマスタのインスタンス生成
 		$m_phtest_growth = new M_PHTEST_GROWTH($pdo);
 
 		// 質問リストの取得(陰)

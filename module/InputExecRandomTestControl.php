@@ -34,7 +34,7 @@ $pdo = db_connect_pdo();
 if($type == 'init'){
 	// 不正防止のため、2回目以降はスキップ
 	if(!isset($_SESSION['rmd_phid'])){
-		// 育成心理テストマスタのインスタンス生成
+		// 育成マイモンチェックマスタのインスタンス生成
 		$m_phtest_growth = new M_PHTEST_GROWTH($pdo);
 
 		// 質問リストの取得(ランダム)
@@ -85,11 +85,11 @@ if($type == 'init'){
 	}
 }
 else if($type == 'complete'){
-	// 育成心理テストマスタのインスタンス生成
+	// 育成マイモンチェックマスタのインスタンス生成
 	$m_phtest_growth = new M_PHTEST_GROWTH($pdo);
-	// 育成心理テスト履歴テーブルのインスタンス生成
+	// 育成マイモンチェック履歴テーブルのインスタンス生成
 	$t_phtest_growth_history = new T_PHTEST_GROWTH_HISTORY($pdo);
-	// 育成心理テスト加減値累計テーブルのインスタンス生成
+	// 育成マイモンチェック加減値累計テーブルのインスタンス生成
 	$t_phtest_total_history = new T_PHTEST_TOTAL_HISTORY($pdo);
 
 	$t_phtest_growth_history->beginTransaction();
@@ -135,7 +135,7 @@ else if($type == 'complete'){
 			$t_phtest_total_history->close();
 			$t_phtest_growth_history->close();
 			$m_phtest_growth->close();
-			$logger->error('[InputExecRandomTestControl]心理テスト回答内容の登録に失敗しました。');
+			$logger->error('[InputExecRandomTestControl]マイモンチェック回答内容の登録に失敗しました。');
 			$resultArr = array(
 				'status' => 'fail'
 			);
@@ -160,7 +160,7 @@ else if($type == 'complete'){
 		$t_phtest_total_history->close();
 		$t_phtest_growth_history->close();
 		$m_phtest_growth->close();
-		$logger->error('[InputExecRandomTestControl]心理テスト回答内容の登録に失敗しました。');
+		$logger->error('[InputExecRandomTestControl]マイモンチェック回答内容の登録に失敗しました。');
 		$resultArr = array(
 				'status' => 'fail'
 		);
@@ -214,7 +214,7 @@ else if($type == 'complete'){
 		$t_phtest_total_history->close();
 		$t_phtest_growth_history->close();
 		$m_phtest_growth->close();
-		$logger->error('[InputExecRandomTestControl]心理テスト回答内容の登録に失敗しました。');
+		$logger->error('[InputExecRandomTestControl]マイモンチェック回答内容の登録に失敗しました。');
 		$resultArr = array(
 				'status' => 'fail'
 		);

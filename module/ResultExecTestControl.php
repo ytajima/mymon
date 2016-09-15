@@ -47,7 +47,7 @@ $pdo = db_connect_pdo();
 $view = new ResultExecTestView();
 
 if($type == 'init'){
-	// 心理テスト履歴テーブルのインスタンス生成
+	// マイモンチェック履歴テーブルのインスタンス生成
 	$t_phtest_basic_history = new T_PHTEST_BASIC_HISTORY($pdo);
 
 	// ソート済み集計データの取得
@@ -75,7 +75,7 @@ if($type == 'init'){
 		}
 	}
 	else{
-		// 心理テスト履歴テーブルのインスタンス生成
+		// マイモンチェック履歴テーブルのインスタンス生成
 		$t_phtest_basic_history = new T_PHTEST_BASIC_HISTORY($pdo);
 
 		// 集計ランクを取得
@@ -101,7 +101,7 @@ if($type == 'init'){
          **/
         $selfPositiveRate = round((35 - $rankArr[0]['total']) / 35 * 100, 1);
 
-		// 心理テスト結果履歴テーブルのインスタンス生成
+		// マイモンチェック結果履歴テーブルのインスタンス生成
 		// トークンとキャラクターIDを紐づける
 		$t_phtest_result_history = new T_PHTEST_RESULT_HISTORY($pdo);
 		$t_phtest_result_history->setId($_SESSION['csrf-requested-token']);
