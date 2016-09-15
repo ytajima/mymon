@@ -41,9 +41,9 @@ define("PHTHIS003", "
 			when
 				count(a.answer) <= 7 then '5'
 			when
-				count(a.answer) >= 8 and count(a.answer) <= 13 then '4'
+				count(a.answer) >= 8 and count(a.answer) <= 14 then '4'
 			when
-				count(a.answer) >= 16 and count(a.answer) <= 20 then '3'
+				count(a.answer) >= 15 and count(a.answer) <= 20 then '3'
 			when
 				count(a.answer) >= 21 and count(a.answer) <= 27 then '2'
 			when

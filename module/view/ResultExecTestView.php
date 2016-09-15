@@ -1,7 +1,7 @@
 <?php
 class ResultExecTestView {
 	function img($name, $imgfilenm){
-		$html = "<img alt='".$name."' title='".$name."' src='".$imgfilenm."'>";
+		$html = "<img alt='".$name."' title='".$name."' src='".$imgfilenm."' class='character-img'>";
 		return $html;
 	}
 	function twitter($img, $val){

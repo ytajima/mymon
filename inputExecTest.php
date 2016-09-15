@@ -181,7 +181,7 @@ if(!isset($_SESSION['csrf-requested-token']) || empty($_SESSION['csrf-requested-
 
     <footer id="colophon" class="site-footer" role="contentinfo">
         <div class="site-info">
-            Proudly Powered by mymon<span class="sep"></span></div><!-- .site-info -->
+            ©Copyright2016 「自己受容」 実践サイト.All Rights Reserved.<span class="sep"></span></div><!-- .site-info -->
     </footer><!-- #colophon -->
 </div><!-- #page -->
 <script type="text/javascript">
