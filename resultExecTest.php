@@ -183,28 +183,28 @@ if(!isset($_SESSION['csrf-requested-token']) || empty($_SESSION['csrf-requested-
                                     <ul class="clearfix">
                                         <!--ツイートボタン-->
                                         <li class="twitter">
-                                            <a target="blank" href="http://twitter.com/intent/tweet?url=http%3A%2F%2Fjikojyuyou.com%2F2016%2F09%2F06%2F%25e3%2580%258c%25e3%2581%2593%25e3%2581%2593%25e3%2582%258d%25e3%2581%25ae%25e4%25bb%2595%25e7%25b5%2584%25e3%2581%25bf%25e3%2580%258d%25e3%2582%25bb%25e3%2583%259f%25e3%2583%258a%25e3%2583%25bc%25e9%2596%258b%25e5%2582%25ac%2F&text=%E3%80%8C%E3%81%93%E3%81%93%E3%82%8D%E3%81%AE%E4%BB%95%E7%B5%84%E3%81%BF%E3%80%8D%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E9%96%8B%E5%82%AC&tw_p=tweetbutton" onclick="window.open(this.href, 'tweetwindow', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;"><i class="fa fa-twitter"></i><span class="text">ツイート</span><span class="count"></span></a>
+                                            <a target="blank" href="http://twitter.com/intent/tweet?url=http://mymon.yourtalk.net/index.php&text=マインドモンスター&tw_p=tweetbutton" onclick="window.open(this.href, 'tweetwindow', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;"><i class="fa fa-twitter"></i><span class="text">ツイート</span><span class="count"></span></a>
                                         </li>
 
                                         <!--Facebookボタン-->
                                         <li class="facebook">
-                                            <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3A%2F%2Fjikojyuyou.com%2F2016%2F09%2F06%2F%25e3%2580%258c%25e3%2581%2593%25e3%2581%2593%25e3%2582%258d%25e3%2581%25ae%25e4%25bb%2595%25e7%25b5%2584%25e3%2581%25bf%25e3%2580%258d%25e3%2582%25bb%25e3%2583%259f%25e3%2583%258a%25e3%2583%25bc%25e9%2596%258b%25e5%2582%25ac%2F&t=" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"><i class="fa fa-facebook"></i>
+                                            <a href="http://www.facebook.com/sharer.php?src=bm&u=http://mymon.yourtalk.net/index.php&t=" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"><i class="fa fa-facebook"></i>
                                                 <span class="text">シェア</span><span class="count"></span></a>
                                         </li>
 
                                         <!--はてブボタン-->
                                         <li class="hatebu">
-                                            <a href="http://b.hatena.ne.jp/add?mode=confirm&url=http://jikojyuyou.com/2016/09/06/%e3%80%8c%e3%81%93%e3%81%93%e3%82%8d%e3%81%ae%e4%bb%95%e7%b5%84%e3%81%bf%e3%80%8d%e3%82%bb%e3%83%9f%e3%83%8a%e3%83%bc%e9%96%8b%e5%82%ac/&title=%E3%80%8C%E3%81%93%E3%81%93%E3%82%8D%E3%81%AE%E4%BB%95%E7%B5%84%E3%81%BF%E3%80%8D%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E9%96%8B%E5%82%AC" onclick="window.open(this.href, 'HBwindow', 'width=600, height=400, menubar=no, toolbar=no, scrollbars=yes'); return false;" target="_blank"><span class="text">はてブ</span><span class="count"></span></a>
+                                            <a href="http://b.hatena.ne.jp/add?mode=confirm&url=http://mymon.yourtalk.net/index.php&title=マインドモンスター" onclick="window.open(this.href, 'HBwindow', 'width=600, height=400, menubar=no, toolbar=no, scrollbars=yes'); return false;" target="_blank"><span class="text">はてブ</span><span class="count"></span></a>
                                         </li>
 
                                         <!--Google+1ボタン-->
                                         <li class="googleplus">
-                                            <a href="https://plusone.google.com/_/+1/confirm?hl=ja&url=http://jikojyuyou.com/2016/09/06/%e3%80%8c%e3%81%93%e3%81%93%e3%82%8d%e3%81%ae%e4%bb%95%e7%b5%84%e3%81%bf%e3%80%8d%e3%82%bb%e3%83%9f%e3%83%8a%e3%83%bc%e9%96%8b%e5%82%ac/" onclick="window.open(this.href, 'window', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;" rel="tooltip" data-toggle="tooltip" data-placement="top" title="GooglePlusで共有"><i class="fa fa-google-plus"></i><span class="text">Google+</span><span class="count"></span></a>
+                                            <a href="https://plusone.google.com/_/+1/confirm?hl=ja&url=http://mymon.yourtalk.net/index.php" onclick="window.open(this.href, 'window', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;" rel="tooltip" data-toggle="tooltip" data-placement="top" title="GooglePlusで共有"><i class="fa fa-google-plus"></i><span class="text">Google+</span><span class="count"></span></a>
                                         </li>
 
                                         <!--ポケットボタン-->
                                         <li class="pocket">
-                                            <a href="http://getpocket.com/edit?url=http://jikojyuyou.com/2016/09/06/%e3%80%8c%e3%81%93%e3%81%93%e3%82%8d%e3%81%ae%e4%bb%95%e7%b5%84%e3%81%bf%e3%80%8d%e3%82%bb%e3%83%9f%e3%83%8a%e3%83%bc%e9%96%8b%e5%82%ac/&title=「こころの仕組み」セミナー開催" onclick="window.open(this.href, 'FBwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i><span class="text">Pocket</span><span class="count"></span></a></li>
+                                            <a href="http://getpocket.com/edit?url=http://mymon.yourtalk.net/index.php&title=マインドモンスター" onclick="window.open(this.href, 'FBwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i><span class="text">Pocket</span><span class="count"></span></a></li>
                                     </ul>
                                 </div>
                             </div>
