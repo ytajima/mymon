@@ -140,7 +140,7 @@ if(!isset($_SESSION['csrf-requested-token']) || empty($_SESSION['csrf-requested-
     </header><!-- #masthead -->
     <div id="content" class="site-content">
         <div class="container">
-            <div class="col-md-8">
+            <div class="col-md-12">
                 <div id="primary" class="content-area">
                     <main id="main" class="site-main" role="main">
                         <article id="post-1" class="post-1 post type-post status-publish format-standard hentry category-1">
@@ -149,7 +149,7 @@ if(!isset($_SESSION['csrf-requested-token']) || empty($_SESSION['csrf-requested-
                                 <h2 class="entry-title">マイモンチェック結果</h2>
                             </header>
                             <div id='main'>
-                                <table id='custom_admin_left' >
+                                <table id='custom_admin_left' class="result" >
                                     <tr>
                                     <th id='charanm'></th>
                                     </tr>
@@ -165,7 +165,7 @@ if(!isset($_SESSION['csrf-requested-token']) || empty($_SESSION['csrf-requested-
                                     <td id='resultCmt'></td>
                                     </tr>
                                 </table>
-
+<br/>
                                 <div class="entry-header">
                                     <h2 class="entry-title">自己肯定率
                                         <div id='selfPositiveRate' class="self-positive-rate">
@@ -178,7 +178,7 @@ if(!isset($_SESSION['csrf-requested-token']) || empty($_SESSION['csrf-requested-
 <!--                                    <button class='customize' id='toInputUserData' type='submit'>ユーザ登録に進む</button>-->
 <!--                                </div>-->
                             </div>
-                            <div class="share short">
+                            <br/><div class="share short">
                                 <div class="sns">
                                     <ul class="clearfix">
                                         <!--ツイートボタン-->
@@ -208,7 +208,7 @@ if(!isset($_SESSION['csrf-requested-token']) || empty($_SESSION['csrf-requested-
                                     </ul>
                                 </div>
                             </div>
-
+<br/>
                             <hr size="3" />
                             <div class="column-wrap cf ">
                                 <div class="d-1of3 t-1of3 m-all">
@@ -235,7 +235,7 @@ if(!isset($_SESSION['csrf-requested-token']) || empty($_SESSION['csrf-requested-
                                     <div align="center"><a href="http://jikojyuyou.com/ari/">ありのままの自分動画解説</a></div>
                                 </div>
                             </div>
-
+<br/><br/>
                             <p>&nbsp;</p><h1 style="text-align: center;">
                                 <span style="font-size: 24pt; background-color: #ffff00;">ご登録はお済ですか！？</span></h1><p style="text-align: center;">最新の情報をお伝えいたします！！</p><table class="submit" style="border: 2px solid #000000; height: 380px; width: 100%; background-color: #f3f1f2;" border="2" frame="border" rules="all" align="center"><tbody><tr><td style="width: 100%;"><dl><!-- Note :
    - You can modify the font style and form style to suit your website.
@@ -297,7 +297,7 @@ if(!isset($_SESSION['csrf-requested-token']) || empty($_SESSION['csrf-requested-
     </div><!-- #content -->
     <footer id="colophon" class="site-footer" role="contentinfo">
         <div class="site-info">
-            ©Copyright2016 「自己受容」 実践サイト.All Rights Reserved.<span class="sep"></span></div><!-- .site-info -->
+            cCopyright2016 「自己受容」 実践サイト.All Rights Reserved.<span class="sep"></span></div><!-- .site-info -->
     </footer><!-- #colophon -->
 </div><!-- #page -->
 <script type="text/javascript">

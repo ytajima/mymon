@@ -942,8 +942,14 @@ p.site-title{
     color: #000000;
 }
 
+.result th {
+    text-align: center;
+}
+.result td {
+    text-align: center;
+}
 .character-img {
-    width: 100%;
+    width: 55%;
 }
 
 /* 元デザインのCSS *******************************/
@@ -1664,6 +1670,17 @@ SNS
     .m-2of3 {float: left;padding-right: 0.75em;width: 66.66%; }
     .m-1of4 {float: left;padding-right: 0.75em;width: 25%; }
     .m-3of4 {float: left;padding-right: 0.75em;width: 75%; }
+
+    .result th {
+        text-align: left;
+    }
+    .result td {
+        text-align: center;
+    }
+
+    .character-img {
+        width: 100%;
+    }
 }
 
 /* --------------------------------------------- */
